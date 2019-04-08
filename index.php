@@ -1,4 +1,4 @@
-<?php require 'header.php';?>
+<?php require 'content/header.php';?>
 
 
 
@@ -8,4 +8,4 @@
 
 
 
-<?php require 'footer.php';?>
+<?php require 'content/footer.php';?>
