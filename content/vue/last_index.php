@@ -1,4 +1,13 @@
-<?php require 'https://remi.webtech.one/dorian/accesdb.php';?>
+<?php
+try
+{
+$bdd = new PDO('mysql:host=;dbname=;charset=utf8', '','');
+}
+catch(Exception $bdd)
+{
+  die('Erreur : '.$bdd->getMessage());
+}
+?>
 <br>
 <div class="container">
   <div class="row">
