@@ -1,13 +1,4 @@
-<?php
-try
-{
-$bdd = new PDO('mysql:host=webtech.one.mysql;dbname=webtech_one_becode;charset=utf8', 'webtech_one_becode','BEcode2019');
-}
-catch(Exception $bdd)
-{
-  die('Erreur : '.$bdd->getMessage());
-}
-?>
+<?php require 'https://remi.webtech.one/dorian/accesdb.php';?>
 <br>
 <div class="container">
   <div class="row">
