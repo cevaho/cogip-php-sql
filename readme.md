@@ -1,6 +1,6 @@
 # Accounting Application COGIP
 
-## Group project of [Cédric Van Hove](https://github.com/cevaho), [Dorian Vanderheyden](https://github.com/dorianbec), [Dorothée Weiss](https://github.com/doropro).
+## Group project of [Dorothée Weiss](https://github.com/doropro), [Cédric Van Hove](https://github.com/cevaho), [Dorian Vanderheyden](https://github.com/dorianbec).
 
 *Exercice made as from 8st april 2019 to 12 april 2019, as a group project for the [BeCode](https://www.becode.org/) training in order to become a Web Developper*
 
@@ -13,16 +13,16 @@ https://github.com/becodeorg/BXL-Johnson-3.9/tree/master/Projets/COGIPapp
 
 ### Distribution of tasks
 
-* Dorian :
-    - Architecture MVC (controler, vue), splitting the original php file in model and vues, loading the vue deping on the url parameters;
-    - Daschboard admin (index.php);
-
 * Cédric :
     - Society pages(list invoices display, sigle detail page, adding new one, delete existing one);
 
 * Dorothée :
     - Page contact(list display, sigle detail page, adding new one, delete existing one and modify existing contact);
     - Invoices pages(list invoices display, sigle detail page, adding new one);
+
+* Dorian :
+    - Architecture MVC (controler, vue), splitting the original php file in model and vues, loading the vue depending on the url parameters;
+    - Daschboard admin (index.php);
 
 ## Searchable site
 
