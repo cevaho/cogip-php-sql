@@ -34,7 +34,7 @@ https://github.com/becodeorg/BXL-Johnson-3.9/tree/master/Projets/COGIPapp
 - [contact page](https://github.com/cevaho/cogip-php-sql/blob/master/contact.php)
 - [detail contact page](https://github.com/cevaho/cogip-php-sql/blob/master/detailcontact.php)
 - [society page](https://github.com/cevaho/cogip-php-sql/blob/master/societe.php)
-- [detailsociety page](https://github.com/cevaho/cogip-php-sql/blob/master/societe-delete.php)
+- [detail society page](https://github.com/cevaho/cogip-php-sql/blob/master/societe-delete.php)
 
 ## Used Languages and technologies
 
