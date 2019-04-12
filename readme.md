@@ -13,12 +13,13 @@ https://github.com/becodeorg/BXL-Johnson-3.9/tree/master/Projets/COGIPapp
 
 ### Distribution of tasks
 
-* Cédric :
-    - Society pages(list invoices display, sigle detail page, adding new one, delete existing one);
 
 * Dorothée :
     - Page contact(list display, sigle detail page, adding new one, delete existing one and modify existing contact);
     - Invoices pages(list invoices display, sigle detail page, adding new one);
+
+* Cédric :
+    - Society pages(list invoices display, sigle detail page, adding new one, delete existing one);
 
 * Dorian :
     - Architecture MVC (controler, vue), splitting the original php file in model and vues, loading the vue depending on the url parameters;
@@ -38,8 +39,8 @@ https://github.com/becodeorg/BXL-Johnson-3.9/tree/master/Projets/COGIPapp
 ## Used Languages and technologies
 
 * PHP MySql html and css
+* BOOTSTRAP
 * MVC structure
-* BOOTSRAP
 
 ## Screenshot
 ![Screenshot Application](Cogip_index-php.png)
