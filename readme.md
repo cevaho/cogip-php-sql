@@ -31,10 +31,10 @@ https://github.com/becodeorg/BXL-Johnson-3.9/tree/master/Projets/COGIPapp
 
 ## samples of pages without mvc can be seen in this repository
 
-[contact page](https://github.com/cevaho/cogip-php-sql/blob/master/contact.php)
-[detail contact page](https://github.com/cevaho/cogip-php-sql/blob/master/detailcontact.php)
-[society page](https://github.com/cevaho/cogip-php-sql/blob/master/societe.php)
-[detailsociety page](https://github.com/cevaho/cogip-php-sql/blob/master/societe-delete.php)
+- [contact page](https://github.com/cevaho/cogip-php-sql/blob/master/contact.php)
+- [detail contact page](https://github.com/cevaho/cogip-php-sql/blob/master/detailcontact.php)
+- [society page](https://github.com/cevaho/cogip-php-sql/blob/master/societe.php)
+- [detailsociety page](https://github.com/cevaho/cogip-php-sql/blob/master/societe-delete.php)
 
 ## Used Languages and technologies
 
