@@ -2,7 +2,7 @@
 
 ## Group project of [Dorothée Weiss](https://github.com/doropro), [Cédric Van Hove](https://github.com/cevaho), [Dorian Vanderheyden](https://github.com/dorianbec).
 
-*Exercice made as from 8st april 2019 to 12 april 2019, as a group project for the [BeCode](https://www.becode.org/) training in order to become a Web Developper*
+*Exercice made as from 8th april 2019 to 12th april 2019, working team for the [BeCode](https://www.becode.org/) Web Developper training*
 
 ## Project
 
