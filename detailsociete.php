@@ -2,7 +2,7 @@
 require 'header.php';
 try
 {
-$bdd = new PDO('mysql:host=webtech.one.mysql;dbname=webtech_one_becode;charset=utf8', 'webtech_one_becode','BEcode2019');
+$bdd = new PDO('mysql:host=webtech.one.mysql;dbname=webtech_one_becode;charset=utf8', '*','*');
 }
 catch(Exception $bdd)
 {
