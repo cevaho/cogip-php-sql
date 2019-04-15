@@ -15,14 +15,14 @@ https://github.com/becodeorg/BXL-Johnson-3.9/tree/master/Projets/COGIPapp
 
 
 * Dorothée :
-    - Page contact(list display, sigle detail page, adding new one, delete existing one and modify existing contact);
-    - Invoices pages(list invoices display, sigle detail page, adding new one);
+    - Page contact(list display, single detail page, adding new one, delete existing one and modify existing contact);
+    - Invoices pages(list invoices display, single detail page, adding new one);
 
 * Cédric :
-    - Society pages(list invoices display, sigle detail page, adding new one, delete existing one);
+    - Society pages(list invoices display, single detail page, adding new one, delete existing one);
 
 * Dorian :
-    - Architecture MVC (controler, vue), splitting the original php file in model and vues, loading the vue depending on the url parameters;
+    - Architecture MVC (controler, vue), splitting the original php files in models and vues, loading the vue depending on the url parameters;
     - Daschboard admin (index.php);
 
 ## Searchable site
