@@ -6,10 +6,11 @@
 
 ## Project
 
-For this project, we have created an accounting application for COGIP using PHP, DQL and architecture MVC.
+For this project, we have created an accounting application for the fictive company *COGIP* using PHP, SQL and MVC architecture.
 
 ### Link to the complete instructions
 https://github.com/becodeorg/BXL-Johnson-3.9/tree/master/Projets/COGIPapp
+
 
 ### Distribution of tasks
 
