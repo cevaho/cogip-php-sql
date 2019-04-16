@@ -4,7 +4,7 @@ require 'header.php';
 //CONNECTION BDD
 try
 {
-	$bdd = new PDO('mysql:host=webtech.one.mysql;dbname=webtech_one_becode;charset=utf8', '*','*');
+	$bdd = new PDO('mysql:host=webtech.one.mysql;dbname=webtech_one_becode;charset=utf8', 'webtech_one_becode','BEcode2019');
 }
 catch(Exception $bdd)
 {
@@ -17,7 +17,7 @@ $client=$bdd->query('SELECT * FROM `remi_societe` WHERE remi_societe.type_societ
 
 
 if(isset($_POST['supprim'])){
-				echo"bon alors c'est checké !";
+				//echo"bon alors c'est checké !";
 				
 				$new = $_POST["societaler"];
 

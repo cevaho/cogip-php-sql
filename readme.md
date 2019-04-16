@@ -50,11 +50,11 @@ https://github.com/becodeorg/BXL-Johnson-3.9/tree/master/Projets/COGIPapp
 ## Objectifs d'évaluation
 
 - Utiliser des paramètres URL et des noms de fichiers différents [*ok*]()
-- Bien utiliser la sanitization pour éviter les injections SQL dans votre DB (un esprit malveillant pourrait tenter de delete l'intégralité de votre DB) [*à compléter sur certaines pages*]()
-- Valider les données afin que Ranu n'encode pas n'importe quoi [*peutmettre ce qu'il veut tant que ce sont des caractères normaux, il fautune vallidation sur les emails, qu'ils soient uniques aussi, une meilleure validation de la tv et et du tel*]()
-- Contruire une base de données relationnelles fonctionnelle [*OK pas de table de liaison pour l'instant*]()
- - Utiliser des jointures correctes en SQL [*ok avec et sans join*]()
-- Utiliser des alias dans vos requêtes SQL [*ok quand on ne fait pas de select all*]()
+- Bien utiliser la sanitization pour éviter les injections SQL dans votre DB (un esprit malveillant pourrait tenter de delete l'intégralité de votre DB) [*facture et contact ok ?*]()
+- Valider les données afin que Ranu n'encode pas n'importe quoi [*Ranu peut mettre ce qu'il veut tant que ce sont des caractères normaux, il faudrait une vallidation sur les emails, qu'ils soient uniques aussi, une meilleure validation de la tva et et du tel*]()
+- Contruire une base de données relationnelles fonctionnelle [*OK*]()
+ - Utiliser des jointures correctes en SQL [*ok*]()
+- Utiliser des alias dans vos requêtes SQL [*ok*]()
 - Implémenter un CRUD :
         - réaliser une interface qui permette de lire des données [*ok*]()
         - réaliser une interface qui permette d'ajouter des données [*ok*]()
@@ -65,8 +65,8 @@ https://github.com/becodeorg/BXL-Johnson-3.9/tree/master/Projets/COGIPapp
 
 - Crypter le mot de passe dans la base de données (il ne doit pas apparaître en clair) [*pas fait*]()
 - Utiliser la structure MVC pour ranger vos fichiers et vos fonctionnalités [*ok*]()
-- Utiliser un routeur [*plus ou moins ok, s'en assurer*]()
-- Savoir mettre en place une session [*pas ok*]()
+- Utiliser un routeur [*ok*]()
+- Savoir mettre en place une session [*pas fait*]()
 - Permettre ou non l'accès à certaines pages en fonction des permissions de session [*à verifier quand la session sera faite*]()
 
 N'oubliez pas de mettre le fichier SQL avec la structure et les données dans votre repo. [*à faire*]()
@@ -76,28 +76,19 @@ Absolument et non négociable : les données relatives aux personnes, sociétés
 
 ### Pour les personnes, il nous faudra :
 
-    le nom
-    le prénom
-    l'e-mail
-[*ok*]()
+    le nom, le prénom, l'e-mail [*ok*]()
 
 ### Pour les sociétés :
 
-    le nom de la société
-    le pays
-    le n° de TVA
-[*ok*]()
+    le nom de la société, le pays, le n° de TVA [*ok*]()
 
 ### Pour les factures :
 
-    le numéro de la facture
-    la date de la facture
-[*ok*]()
+    le numéro de la facture, la date de la facture [*ok*]()
 
 ### Pour le type (d'entreprises)
 
-    le type (soit client, soit fournisseur)
-[*ok*]()
+    le type (soit client, soit fournisseur) [*ok*]()
 
 Eclaircissement :
 
@@ -126,21 +117,30 @@ Affichera :
 
 ### page sociétés
 
-Affichera la liste des sociétés par ordre alphabétique. [*à faire par ordre alphabetique !*]()
+Affichera la liste des sociétés par ordre alphabétique. [*ok*]()
 
 Le nom de chaque société sera un lien qui renverra vers une nouvelle page detailsociete dont le contenu sera généré en fonction de l'id de la société choisie. [*ok*]()
+page ajout societe [*ok*]()
+page delete societe [*ok*]()
+page modif societe
 
 ### page factures
 
-Affichera la liste des factures par date la plus récente vers la date la plus lointaine. [*verifier l'ordre*]()
+Affichera la liste des factures par date la plus récente vers la date la plus lointaine. [*ok*]()
 
 Chaque numéro de facture sera un lien qui, au clic, renverra vers une page detailfacture dont le contenu sera généré en fonction de l'id de la facture sélectionnée. [*ok*]()
+page ajout facture[*ok*]()
+page delete facture
+page modif facture
 
 ### page annuaire
 
 Affichera la liste de toutes les personnes de contact de la base de données, par ordre alphabétique. [*vérifier l'ordre !*]()
 
 Le nom de chaque personne sera un lien qui renverra vers une nouvelle page detailcontact dont le contenu sera généré en fonction de l'id de la personne choisie. [*ok*]()
+page ajout contact [*ok*]()
+page delete contact [*ok*]()
+page modif contact [*ok*]()
 
 ### page fournisseurs
 
@@ -170,6 +170,7 @@ Affichera les informations suivantes selon la facture choisie :
     société liée à la facture
     type de la société liée à la facture (fournisseur ou client)
     personne de contact liée à la facture
+[*OK*]()
 
 ### detailcontact
 

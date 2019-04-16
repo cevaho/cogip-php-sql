@@ -4,7 +4,7 @@ require 'header.php';
 //CONNECTION BDD
 try
 {
-	$bdd = new PDO('mysql:host=webtech.one.mysql;dbname=webtech_one_becode;charset=utf8', '*','*');
+	$bdd = new PDO('mysql:host=webtech.one.mysql;dbname=webtech_one_becode;charset=utf8', 'webtech_one_becode','BEcode2019');
 }
 catch(Exception $bdd)
 {
@@ -12,8 +12,8 @@ catch(Exception $bdd)
 }
 
 
-$fournisseur=$bdd->query('SELECT * FROM `remi_societe` WHERE remi_societe.type_societe="fournisseur"');
-$client=$bdd->query('SELECT * FROM `remi_societe` WHERE remi_societe.type_societe="client"');
+$fournisseur=$bdd->query('SELECT * FROM `remi_societe` WHERE remi_societe.type_societe="fournisseur" ORDER BY remi_societe.name_societe');
+$client=$bdd->query('SELECT * FROM `remi_societe` WHERE remi_societe.type_societe="client" ORDER BY remi_societe.name_societe');
 
 ?>
 <div class="container">
@@ -21,9 +21,9 @@ $client=$bdd->query('SELECT * FROM `remi_societe` WHERE remi_societe.type_societ
     	<div class="col-12"><h2 class="text-center">Annuaire des sociétés</h2></div>
   </div>
 
-<section>
+<section class="fromsociete">
   <div class ="row">
-      <div class="col-12">Clients</div>
+      <div class="col-12"><h3>Clients</h3></div>
       <div class ="col-4">Nom de société :</div>
       <div class ="col-4">N° de TVA :</div>
       <div class ="col-4">Pays :</div>
@@ -42,9 +42,9 @@ while ($clien = $client->fetch())//tant qu'il y a un resultat
 }
 ?>
 </section>
-<section>
+<section class="fromsociete">
   <div class ="row">
-      <div class="col-12">Fournisseurs</div>
+      <div class="col-12"><h3>Fournisseurs</h3></div>
       <div class ="col-4">Nom de société :</div>
       <div class ="col-4">N° de TVA :</div>
       <div class ="col-4">Pays :</div>
@@ -64,7 +64,11 @@ while ($fournis = $fournisseur->fetch())//tant qu'il y a un resultat
 }
 ?>
 </section>
-
+<style>
+	.container h2{margin-top:20px;}
+	.fromsociete{margin-top:30px;}
+	.fromsociete .row{min-height:25px;}
+</style>
 
 </div>
 <?php require 'footer.php';?>

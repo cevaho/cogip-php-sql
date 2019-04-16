@@ -2,13 +2,15 @@
 require 'header.php';
 try
 {
-$bdd = new PDO('mysql:host=webtech.one.mysql;dbname=webtech_one_becode;charset=utf8', '*','*');
+$bdd = new PDO('mysql:host=webtech.one.mysql;dbname=webtech_one_becode;charset=utf8', 'webtech_one_becode','BEcode2019');
 }
 catch(Exception $bdd)
 {
   die('Erreur : '.$bdd->getMessage());
 }
-$societeName=htmlspecialchars($_GET[societe]);
+
+$societeNa=htmlspecialchars($_GET[societe]);
+$societeName = substr($societeNa, 0, 30);
 
 $societa= $bdd->prepare("
 	SELECT 
@@ -80,7 +82,7 @@ $contact=$contacteur->fetch();*/
   </div>
   <div class="row">
 	<div class="col-6">
-		<section>
+		<section class="fromsociete">
 			<div class="row">
 				<div class="col-12">
 <?php 
@@ -93,7 +95,7 @@ $societi = $societa->fetch()
 			</div>
 		</section>
 
-		<section>
+		<section class="fromsociete">
 			<h3>Personnes de contact :</h3>
 			<div class="row">
 				<div class="col-4">Nom du contact</div>
@@ -115,7 +117,7 @@ while ($conta = $contactSociete->fetch()){
 
 <?php $contactSociete->closeCursor();?>
 
-		<section>
+		<section class="fromsociete">
 			<h3>Factures de la société :</h3>
 			<div class="row">
 				<div class="col-4">N° de facture</div>
@@ -140,3 +142,8 @@ while ($factur = $factureDate->fetch()){
 	</div>
   </div>
 </div>
+<style>
+	.container h2{margin-top:20px;}
+	.fromsociete{margin-top:30px;}
+	.fromsociete .row{min-height:25px;}
+</style>

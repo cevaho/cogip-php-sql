@@ -4,7 +4,7 @@ require 'header.php';
 //CONNECTION BDD
 try
 {
-	$bdd = new PDO('mysql:host=webtech.one.mysql;dbname=webtech_one_becode;charset=utf8', '*','*');
+	$bdd = new PDO('mysql:host=webtech.one.mysql;dbname=webtech_one_becode;charset=utf8', 'webtech_one_becode','BEcode2019');
 }
 catch(Exception $bdd)
 {
@@ -90,7 +90,7 @@ if(isset($_POST["envoyer"])){
     	<div class="col-12"><h2 class="text-center">Ajout d'une nouvelle société</h2></div>
   </div>
 
-<section>
+<section class="fromsociete">
   <div class ="row">
 	<div class="col-6">
       
@@ -130,6 +130,10 @@ if(isset($_POST["envoyer"])){
   </div>
 </section>
 
-
+<style>
+	.container h2{margin-top:20px;}
+	.fromsociete{margin-top:30px;}
+	.fromsociete .row{min-height:25px;}
+</style>
 </div>
 <?php require 'footer.php';?>
