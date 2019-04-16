@@ -129,18 +129,18 @@ page modif societe
 Affichera la liste des factures par date la plus récente vers la date la plus lointaine. [*ok*]()
 
 Chaque numéro de facture sera un lien qui, au clic, renverra vers une page detailfacture dont le contenu sera généré en fonction de l'id de la facture sélectionnée. [*ok*]()
-page ajout facture[*ok*]()
+page ajout facture[*ok, ajouter message max 10 chiffres pour n°facture*]()
 page delete facture
 page modif facture
 
 ### page annuaire
 
-Affichera la liste de toutes les personnes de contact de la base de données, par ordre alphabétique. [*vérifier l'ordre !*]()
+Affichera la liste de toutes les personnes de contact de la base de données, par ordre alphabétique. [*ok*]()
 
 Le nom de chaque personne sera un lien qui renverra vers une nouvelle page detailcontact dont le contenu sera généré en fonction de l'id de la personne choisie. [*ok*]()
 page ajout contact [*ok*]()
 page delete contact [*ok*]()
-page modif contact [*ok*]()
+page modif contact [*ok, vérifier le rechargement des infos après modification*]()
 
 ### page fournisseurs
 
@@ -196,9 +196,9 @@ Une fois que vous avez réalisé la partie consultation de la base de données c
 
 Il aura besoin d'un dashboard dans lequel il pourra avoir un accès direct aux :
 
-- 5 dernières factures (n° de facture, date, société). En cliquant sur le numéro de la facture, Jean-Christian arrivera sur une page qui lui permettra de modifier la facture. Au clic du nom de la société, il pourra modifier les infos de la société.
-- 5 dernières sociétés (nom de la société et type de société). En cliquant sur le nom de société, Jean-Christian arrivera sur une page qui lui permettra de modifier la société.
-- 5 derniers contacts (prénom+nom, email, nom de société). En cliquant sur le nom du contact, Jean-Christian arrivera sur une page qui lui permettra de modifier la facture. Au clic du nom de la société, il pourra modifier les infos de la société.
+- 5 dernières factures (n° de facture, date, société). En cliquant sur le numéro de la facture, Jean-Christian arrivera sur une page qui lui permettra de modifier la facture. Au clic du nom de la société, il pourra modifier les infos de la société.[*OK*]()
+- 5 dernières sociétés (nom de la société et type de société). En cliquant sur le nom de société, Jean-Christian arrivera sur une page qui lui permettra de modifier la société.[*pas de date dans la table société, pas fait de join avec facture et société, donc juste les 5 premières sociétés par ordre alphabetique*]()
+- 5 derniers contacts (prénom+nom, email, nom de société). En cliquant sur le nom du contact, Jean-Christian arrivera sur une page qui lui permettra de modifier la facture. Au clic du nom de la société, il pourra modifier les infos de la société.[*pas de date dans la table contact, pas fait de join avec facture et contact, donc juste les 5 premièrs contacts par ordre alphabetique*]()
 
 On prévoiera également que sur la même ligne de chaque élément, il y ait une petite icône représentant une poubelle afin qu'au clic de l'icône, on puisse supprimer l'élement de la ligne.
 
