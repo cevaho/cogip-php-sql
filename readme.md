@@ -47,7 +47,7 @@ https://github.com/becodeorg/BXL-Johnson-3.9/tree/master/Projets/COGIPapp
 ![Screenshot Application](Cogip_index-php.png)
 
 
-##Objectifs d'évaluation
+## Objectifs d'évaluation
 
 - Utiliser des paramètres URL et des noms de fichiers différents *ok*
 - Bien utiliser la sanitization pour éviter les injections SQL dans votre DB (un esprit malveillant pourrait tenter de delete l'intégralité de votre DB) *à compléter su certaines pages*
@@ -61,7 +61,7 @@ https://github.com/becodeorg/BXL-Johnson-3.9/tree/master/Projets/COGIPapp
         - réaliser une interface qui permette de modifier des données *pas encore pour société, à voir pour facture*
        -  réaliser une interface qui permette de supprimer des données *ok, vérifier pour factures*
 
-##Objectifs d'apprentissage
+## Objectifs d'apprentissage
 
 - Crypter le mot de passe dans la base de données (il ne doit pas apparaître en clair) *pas fait*
 - Utiliser la structure MVC pour ranger vos fichiers et vos fonctionnalités *ok*
@@ -74,27 +74,27 @@ Les données dont Jean-Christian a besoin *ok*
 
 Absolument et non négociable : les données relatives aux personnes, sociétés et factures. *ok*
 
-###Pour les personnes, il nous faudra :
+### Pour les personnes, il nous faudra :
 
     le nom
     le prénom
     l'e-mail
 *ok*
 
-###Pour les sociétés :
+### Pour les sociétés :
 
     le nom de la société
     le pays
     le n° de TVA
 *ok*
 
-###Pour les factures :
+### Pour les factures :
 
     le numéro de la facture
     la date de la facture
 *ok*
 
-###Pour le type (d'entreprises)
+### Pour le type (d'entreprises)
 
     le type (soit client, soit fournisseur)
 *ok*
@@ -104,7 +104,7 @@ Eclaircissement :
     Une société de type "client" va acheter quelque chose à la COGIP, on va donc lui envoyer une facture.
     Quand la COGIP achète quelque chose à une autre société (ça peut être une nouvelle calculatrice ou de l'électricité), elle l'achète à un fournisseur qui fournit un produit ou un service.*ok*
 
-###Notes
+### Notes
 
 - Concernant les relations entre les tables, il faudra :
         - societes --- type *ok*
@@ -112,8 +112,8 @@ Eclaircissement :
         - personnes --- factures *ok*
         - personnes --- societes *ok*
 
-##L'app pour Ranu
-###page d'accueil
+## L'app pour Ranu
+### page d'accueil
 
 Affichera :
 
@@ -124,34 +124,34 @@ Affichera :
 - un lien vers la page fournisseurs *OK*
 - un lien vers la page clients *OK*
 
-###page sociétés
+### page sociétés
 
 Affichera la liste des sociétés par ordre alphabétique. *à faire par ordre alphabetique !*
 
 Le nom de chaque société sera un lien qui renverra vers une nouvelle page detailsociete dont le contenu sera généré en fonction de l'id de la société choisie. *ok*
 
-###page factures
+### page factures
 
 Affichera la liste des factures par date la plus récente vers la date la plus lointaine. *verifier l'ordre*
 
 Chaque numéro de facture sera un lien qui, au clic, renverra vers une page detailfacture dont le contenu sera généré en fonction de l'id de la facture sélectionnée. *ok*
 
-###page annuaire
+### page annuaire
 
 Affichera la liste de toutes les personnes de contact de la base de données, par ordre alphabétique. *vérifier l'ordre !*
 
 Le nom de chaque personne sera un lien qui renverra vers une nouvelle page detailcontact dont le contenu sera généré en fonction de l'id de la personne choisie. *ok*
 
-###page fournisseurs
+### page fournisseurs
 
 Affichera la liste de toutes les sociétés de type fournisseur. Chaque nom de société renvoie, à l'aide d'un lien, vers sa page detailsociete dédiée. *à faire ?*
 
-###page clients
+### page clients
 
 Affichera la liste de toutes les sociétés de type client. Chaque nom de société renvoie, à l'aide d'un lien, vers sa page detailsociete dédiée. *à faire ?*
 
 
-###detailsociete
+### detailsociete
 
 Affichera les informations suivantes selon la société choisie :
 
@@ -161,7 +161,7 @@ Affichera les informations suivantes selon la société choisie :
     liste des personnes de contact travaillant dans la société
 *OK*
 
-###detailfacture
+### detailfacture
 
 Affichera les informations suivantes selon la facture choisie :
 
@@ -171,7 +171,7 @@ Affichera les informations suivantes selon la facture choisie :
     type de la société liée à la facture (fournisseur ou client)
     personne de contact liée à la facture
 
-###detailcontact
+### detailcontact
 
 Affichera les informations suivantes selon la personne de contact choisie :
 
@@ -181,7 +181,7 @@ Affichera les informations suivantes selon la personne de contact choisie :
     la liste des factures liées à la personne
 *OK*
 
-##Partie admin de Ranu
+## Partie admin de Ranu
 
 Avant-propos :
 Faites en sorte que les paramètres URL ne soient pas les mêmes que les noms de vos fichiers PHP. *mauvais*
