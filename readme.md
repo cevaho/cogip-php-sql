@@ -2,7 +2,7 @@
 
 ## Group project of [Dorothée Weiss](https://github.com/doropro), [Cédric Van Hove](https://github.com/cevaho), [Dorian Vanderheyden](https://github.com/dorianbec).
 
-*Exercice made as from 8th april 2019 to 12th april 2019, working team for the [BeCode](https://www.becode.org/) Web Developper training*
+*Exercice made between 8th april 2019 and the 19th april 2019, working team for the [BeCode](https://www.becode.org/) Web Developper training* in order to implement the [CRUD](https://fr.wikipedia.org/wiki/CRUD) with php mySql
 
 ## Project
 
