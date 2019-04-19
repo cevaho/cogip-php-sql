@@ -199,7 +199,11 @@ Il aura besoin d'un dashboard dans lequel il pourra avoir un accès direct aux :
 
 - 5 dernières factures (n° de facture, date, société). En cliquant sur le numéro de la facture, Jean-Christian arrivera sur une page qui lui permettra de modifier la facture. Au clic du nom de la société, il pourra modifier les infos de la société.[*OK*]()
 - 5 dernières sociétés (nom de la société et type de société). En cliquant sur le nom de société, Jean-Christian arrivera sur une page qui lui permettra de modifier la société.[*pas de date dans la table société, pas fait de join avec facture et société, donc juste les 5 premières sociétés par ordre alphabetique*]
+
 - 5 derniers contacts (prénom+nom, email, nom de société). En cliquant sur le nom du contact, Jean-Christian arrivera sur une page qui lui permettra de modifier la facture. Au clic du nom de la société, il pourra modifier les infos de la société.[*pas de date dans la table contact, pas fait de join avec facture et contact, donc juste les 5 premiers contacts par ordre alphabetique*]()
+
+- 5 derniers contacts (prénom+nom, email, nom de société). En cliquant sur le nom du contact, Jean-Christian arrivera sur une page qui lui permettra de modifier la facture. Au clic du nom de la société, il pourra modifier les infos de la société.[*pas de date dans la table contact, pas fait de join avec facture et contact, donc juste les 5 premièrs contacts par ordre alphabetique*]()
+
 
 On prévoiera également que sur la même ligne de chaque élément, il y ait une petite icône représentant une poubelle afin qu'au clic de l'icône, on puisse supprimer l'élement de la ligne.
 
@@ -209,7 +213,11 @@ Il aura aussi des accès rapides (à l'aide de boutons) pour pouvoir ajouter :
 - un nouveau contact [*OK*]()
 - une nouvelle société [*OK*]()
 
+
 Et vous prévoirez un message d'accueil pour la personne connectée. Selon qu'il s'agisse de Jean-Christian ou de Muriel. [*fait ?*]()
+
+Et vous prévoirez un message d'accueil pour la personne connectée. Selon qu'il s'agisse de Jean-Christian ou de Muriel. [*à faire*]()
+
 
 GODMODE
 S'il a un accès godmode, l'utilisateur connecté (par défaut Jean-Christian a un accès godmode. Son mot de passe est son nom de famille.), il aura également un bouton pour pouvoir gérer les utilisateurs. Ce bouton l'amènera vers un dashboard qui lui permettra de voir les utilisateurs connectés, leurs accès et de pouvoir les modifier.
