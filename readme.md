@@ -20,11 +20,12 @@ https://github.com/becodeorg/BXL-Johnson-3.9/tree/master/Projets/COGIPapp
     - Invoices pages(list invoices display, single detail page, adding new one);
 
 * Cédric :
-    - Society pages(list invoices display, single detail page, adding new one, delete existing one);
+    - Society pages(list invoices display, single detail page, adding new one, delete existing one, modify contact page);
+
+* both have tested multiple Tables and sql queries in order to modify any information in the database, mixing pages, fixing bugs, sanitizing data, learning how phpMyAdmin works (unique key bugs,...).
 
 * Dorian :
-    - Architecture MVC (controler, vue), splitting the original php files in models and vues, loading the vue depending on the url parameters;
-    - Daschboard admin (index.php);
+    - Architecture MVC (controler, vue), splitting the original php files in models and vues, loading the vue depending on the url parameters; admin daschboard, adding new user, session (?);
 
 ## Searchable site
 
@@ -50,15 +51,15 @@ https://github.com/becodeorg/BXL-Johnson-3.9/tree/master/Projets/COGIPapp
 ## Objectifs d'évaluation
 
 - Utiliser des paramètres URL et des noms de fichiers différents [*ok*]()
-- Bien utiliser la sanitization pour éviter les injections SQL dans votre DB (un esprit malveillant pourrait tenter de delete l'intégralité de votre DB) [*facture et contact ok ?*]()
-- Valider les données afin que Ranu n'encode pas n'importe quoi [*Ranu peut mettre ce qu'il veut tant que ce sont des caractères normaux, il faudrait une vallidation sur les emails, qu'ils soient uniques aussi, une meilleure validation de la tva et et du tel*]()
+- Bien utiliser la sanitization pour éviter les injections SQL dans votre DB (un esprit malveillant pourrait tenter de delete l'intégralité de votre DB) [*OK*]()
+- Valider les données afin que Ranu n'encode pas n'importe quoi [*Ranu peut mettre ce qu'il veut tant que ce sont des caractères normaux, il faudrait une vallidation sur les emails (b-crypt/hachage), qu'ils soient uniques aussi (), une meilleure validation de la tva et et du tel*]()
 - Contruire une base de données relationnelles fonctionnelle [*OK*]()
  - Utiliser des jointures correctes en SQL [*ok*]()
 - Utiliser des alias dans vos requêtes SQL [*ok*]()
 - Implémenter un CRUD :
         - réaliser une interface qui permette de lire des données [*ok*]()
         - réaliser une interface qui permette d'ajouter des données [*ok*]()
-        - réaliser une interface qui permette de modifier des données [*pas encore pour société, à voir pour facture*]()
+        - réaliser une interface qui permette de modifier des données [*ok*]()
         - réaliser une interface qui permette de supprimer des données [*ok, vérifier pour factures*]()
 
 ## Objectifs d'apprentissage
@@ -66,7 +67,7 @@ https://github.com/becodeorg/BXL-Johnson-3.9/tree/master/Projets/COGIPapp
 - Crypter le mot de passe dans la base de données (il ne doit pas apparaître en clair) [*pas fait*]()
 - Utiliser la structure MVC pour ranger vos fichiers et vos fonctionnalités [*ok*]()
 - Utiliser un routeur [*ok*]()
-- Savoir mettre en place une session [*pas fait*]()
+- Savoir mettre en place une session [*pas fait, header-loc suivi de exit pour éviter le changement de la suite du code, jamais basé sur un enregistrement du pwd, autre variable telle que l'id dans la table*]()
 - Permettre ou non l'accès à certaines pages en fonction des permissions de session [*à verifier quand la session sera faite*]()
 
 N'oubliez pas de mettre le fichier SQL avec la structure et les données dans votre repo. [*à faire*]()
@@ -109,9 +110,9 @@ Eclaircissement :
 Affichera :
 
 - un message d'accueil pour Jean-Christian Ranu (s'il est connecté)[*pas fait  je pense*]()
-- la liste des 5 dernières factures, classées par date [*attention 5 factures mais pas les dernières*]()
-- la liste des 5 dernières personnes encodées dans la base de données [*pas les 5 dernières*]()
-- la liste des 5 dernières entreprises encodées dans la base de données [*pas les 5 dernières*]()
+- la liste des 5 dernières factures, classées par date [*ok*]()
+- la liste des 5 dernières personnes encodées dans la base de données [*5 premières ordre alpha*]()
+- la liste des 5 dernières entreprises encodées dans la base de données [*5 premières ordre alpha*]()
 - un lien vers la page fournisseurs [*OK*]()
 - un lien vers la page clients [*OK*]()
 
@@ -122,16 +123,16 @@ Affichera la liste des sociétés par ordre alphabétique. [*ok*]()
 Le nom de chaque société sera un lien qui renverra vers une nouvelle page detailsociete dont le contenu sera généré en fonction de l'id de la société choisie. [*ok*]()
 page ajout societe [*ok*]()
 page delete societe [*ok*]()
-page modif societe
+page modif societe [*ok*]()
 
 ### page factures
 
 Affichera la liste des factures par date la plus récente vers la date la plus lointaine. [*ok*]()
 
 Chaque numéro de facture sera un lien qui, au clic, renverra vers une page detailfacture dont le contenu sera généré en fonction de l'id de la facture sélectionnée. [*ok*]()
-page ajout facture[*ok, ajouter message max 10 chiffres pour n°facture*]()
-page delete facture
-page modif facture
+page ajout facture[*ok*]()
+page delete facture[*ok*]()
+page modif facture[*ok*]()
 
 ### page annuaire
 
@@ -140,7 +141,7 @@ Affichera la liste de toutes les personnes de contact de la base de données, pa
 Le nom de chaque personne sera un lien qui renverra vers une nouvelle page detailcontact dont le contenu sera généré en fonction de l'id de la personne choisie. [*ok*]()
 page ajout contact [*ok*]()
 page delete contact [*ok*]()
-page modif contact [*ok, vérifier le rechargement des infos après modification*]()
+page modif contact [*ok*]()
 
 ### page fournisseurs
 
